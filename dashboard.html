@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGENT — Betting Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg:       #080c10;
+    --bg2:      #0e1520;
+    --bg3:      #162030;
+    --accent:   #00ff88;
+    --accent2:  #00ccff;
+    --danger:   #ff3c5a;
+    --warn:     #ffaa00;
+    --text:     #e0eaf5;
+    --muted:    #5a7090;
+    --border:   #1e3050;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid noise texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,255,136,0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,255,136,0.015) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container { max-width: 1400px; margin: 0 auto; padding: 2rem; position: relative; z-index: 1; }
+
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: -0.02em;
+  }
+  .logo span { color: var(--accent); }
+
+  .status-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .status-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+  }
+
+  /* KPI Cards */
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .kpi {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .kpi:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .kpi::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .kpi:hover::after { transform: scaleX(1); }
+
+  .kpi-label {
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+  .kpi-value {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .kpi-sub {
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+  }
+
+  .positive { color: var(--accent); }
+  .negative { color: var(--danger); }
+  .neutral  { color: var(--accent2); }
+  .warning  { color: var(--warn); }
+
+  /* Vidas */
+  .lives {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+  }
+  .life {
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .life.dead { background: var(--bg3); border: 1px solid var(--border); }
+
+  /* Charts row */
+  .charts-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .card-title {
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+  }
+
+  canvas { max-height: 220px; }
+
+  /* Tabla apuestas */
+  .table-wrap { overflow-x: auto; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.78rem;
+  }
+  thead th {
+    text-align: left;
+    padding: 0.6rem 1rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+  }
+  tbody tr {
+    border-bottom: 1px solid rgba(30,48,80,0.5);
+    transition: background 0.15s;
+  }
+  tbody tr:hover { background: var(--bg3); }
+  td { padding: 0.75rem 1rem; }
+
+  .badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+  .badge-ganada   { background: rgba(0,255,136,0.15); color: var(--accent); }
+  .badge-perdida  { background: rgba(255,60,90,0.15);  color: var(--danger); }
+  .badge-pendiente{ background: rgba(255,170,0,0.15);  color: var(--warn); }
+  .badge-nba      { background: rgba(0,204,255,0.1);   color: var(--accent2); }
+  .badge-soccer   { background: rgba(0,255,136,0.1);   color: var(--accent); }
+
+  .btn-resultado {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem;
+    transition: border-color 0.2s;
+  }
+  .btn-resultado:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* Modal */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    width: 380px;
+  }
+  .modal h3 { font-family: 'Syne', sans-serif; margin-bottom: 1.5rem; }
+  .modal-btns { display: flex; gap: 1rem; margin-top: 1.5rem; }
+  .btn-g, .btn-p, .btn-cancel {
+    flex: 1;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    transition: opacity 0.2s;
+  }
+  .btn-g      { background: var(--accent);  color: #000; }
+  .btn-p      { background: var(--danger);  color: #fff; }
+  .btn-cancel { background: var(--bg3);     color: var(--muted); }
+  .ganancia-input {
+    width: 100%;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .charts-row { grid-template-columns: 1fr; }
+    .kpis { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo">AGENT<span>.</span>BET</div>
+    <div style="display:flex; gap:1rem; align-items:center;">
+      <div id="last-update" style="font-size:0.7rem; color:var(--muted);">—</div>
+      <div class="status-pill">
+        <div class="status-dot"></div>
+        LIVE
+      </div>
+    </div>
+  </header>
+
+  <!-- KPIs -->
+  <div class="kpis" id="kpis">
+    <div class="kpi"><div class="kpi-label">Bankroll</div><div class="kpi-value neutral" id="balance">—</div><div class="kpi-sub" id="pnl-sub">—</div></div>
+    <div class="kpi"><div class="kpi-label">ROI Total</div><div class="kpi-value" id="roi">—</div><div class="kpi-sub" id="roi-sub">—</div></div>
+    <div class="kpi"><div class="kpi-label">Win Rate</div><div class="kpi-value" id="winrate">—</div><div class="kpi-sub" id="wr-sub">—</div></div>
+    <div class="kpi"><div class="kpi-label">Apuestas</div><div class="kpi-value neutral" id="total">—</div><div class="kpi-sub" id="total-sub">—</div></div>
+    <div class="kpi"><div class="kpi-label">Vidas restantes</div><div class="kpi-value" id="vidas">—</div><div class="lives" id="lives-dots"></div></div>
+  </div>
+
+  <!-- Charts -->
+  <div class="charts-row">
+    <div class="card">
+      <div class="card-title">Evolución del bankroll</div>
+      <canvas id="bankrollChart"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-title">ROI por semana</div>
+      <canvas id="roiChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Tabla -->
+  <div class="card">
+    <div class="card-title" style="margin-bottom:1rem;">Últimas apuestas</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Partido</th>
+            <th>Selección</th>
+            <th>Cuota</th>
+            <th>Monto</th>
+            <th>Confianza</th>
+            <th>Resultado</th>
+            <th>P&L</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body">
+          <tr><td colspan="9" style="color:var(--muted); text-align:center; padding:2rem;">Cargando...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- Modal resultado -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <h3>Registrar resultado</h3>
+    <div id="modal-info" style="font-size:0.8rem; color:var(--muted); margin-bottom:1rem;"></div>
+    <label style="font-size:0.7rem; color:var(--muted);">GANANCIA NETA (USD, negativo si perdiste)</label>
+    <input class="ganancia-input" type="number" id="ganancia-input" placeholder="-10.00" step="0.01">
+    <div class="modal-btns">
+      <button class="btn-g" onclick="guardarResultado('ganada')">✓ GANADA</button>
+      <button class="btn-p" onclick="guardarResultado('perdida')">✗ PERDIDA</button>
+      <button class="btn-cancel" onclick="cerrarModal()">CANCELAR</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '/api';
+let apuestaActiva = null;
+let bankrollChart = null;
+let roiChart = null;
+
+// ---- Charts setup ----
+function initCharts() {
+  const defaults = {
+    color: '#5a7090',
+    borderColor: '#1e3050',
+    font: { family: "'Space Mono', monospace", size: 10 }
+  };
+  Chart.defaults.color = defaults.color;
+  Chart.defaults.borderColor = defaults.borderColor;
+  Chart.defaults.font = defaults.font;
+
+  bankrollChart = new Chart(document.getElementById('bankrollChart'), {
+    type: 'line',
+    data: { labels: [], datasets: [{ label: 'Bankroll', data: [],
+      borderColor: '#00ccff', backgroundColor: 'rgba(0,204,255,0.08)',
+      borderWidth: 2, fill: true, tension: 0.4, pointRadius: 3,
+      pointBackgroundColor: '#00ccff' }] },
+    options: { responsive: true, plugins: { legend: { display: false } },
+      scales: { x: { grid: { color: '#0e1520' } }, y: { grid: { color: '#0e1520' } } } }
+  });
+
+  roiChart = new Chart(document.getElementById('roiChart'), {
+    type: 'bar',
+    data: { labels: [], datasets: [{ label: 'ROI %', data: [],
+      backgroundColor: ctx => ctx.raw >= 0 ? 'rgba(0,255,136,0.6)' : 'rgba(255,60,90,0.6)',
+      borderRadius: 4 }] },
+    options: { responsive: true, plugins: { legend: { display: false } },
+      scales: { x: { grid: { color: '#0e1520' } }, y: { grid: { color: '#0e1520' } },
+        yAxes: [{ ticks: { callback: v => v + '%' } }] } }
+  });
+}
+
+// ---- Fetch & render ----
+async function loadStats() {
+  try {
+    const r = await fetch(`${API}/stats`);
+    const d = await r.json();
+
+    const roi = (d.roi * 100).toFixed(1);
+    const wr  = (d.winrate * 100).toFixed(1);
+    const pnl = d.pnl;
+
+    document.getElementById('balance').textContent = `$${d.balance.toFixed(2)}`;
+    document.getElementById('pnl-sub').innerHTML =
+      `<span class="${pnl >= 0 ? 'positive' : 'negative'}">${pnl >= 0 ? '+' : ''}$${pnl.toFixed(2)} vs inicio</span>`;
+
+    const roiEl = document.getElementById('roi');
+    roiEl.textContent = `${roi > 0 ? '+' : ''}${roi}%`;
+    roiEl.className = `kpi-value ${roi >= 0 ? 'positive' : 'negative'}`;
+    document.getElementById('roi-sub').textContent = `${d.retorno.toFixed(2)} USD retorno neto`;
+
+    const wrEl = document.getElementById('winrate');
+    wrEl.textContent = `${wr}%`;
+    wrEl.className = `kpi-value ${wr >= 52 ? 'positive' : wr >= 45 ? 'warning' : 'negative'}`;
+    document.getElementById('wr-sub').textContent = `${d.ganadas} de ${d.total} apuestas`;
+
+    document.getElementById('total').textContent = d.total;
+    document.getElementById('total-sub').textContent = `${d.invertido.toFixed(2)} USD invertido`;
+
+    // Vidas
+    const vidasEl = document.getElementById('vidas');
+    const vidas = d.vidas_restantes;
+    vidasEl.textContent = vidas;
+    vidasEl.className = `kpi-value ${vidas >= 2 ? 'positive' : vidas === 1 ? 'warning' : 'negative'}`;
+    const dots = document.getElementById('lives-dots');
+    dots.innerHTML = '';
+    for (let i = 0; i < d.semanas_limite; i++) {
+      const d2 = document.createElement('div');
+      d2.className = `life${i >= vidas ? ' dead' : ''}`;
+      dots.appendChild(d2);
+    }
+
+    document.getElementById('last-update').textContent =
+      'Actualizado ' + new Date().toLocaleTimeString('es-PE');
+  } catch(e) {
+    console.error('Error cargando stats:', e);
+  }
+}
+
+async function loadBankrollChart() {
+  try {
+    const r = await fetch(`${API}/bankroll`);
+    const d = await r.json();
+    if (!d.length) return;
+    bankrollChart.data.labels = d.map(x => x.timestamp.slice(0,10));
+    bankrollChart.data.datasets[0].data = d.map(x => x.balance);
+    bankrollChart.update();
+  } catch(e) {}
+}
+
+async function loadROIChart() {
+  try {
+    const r = await fetch(`${API}/semanas`);
+    const d = await r.json();
+    if (!d.length) return;
+    const sorted = [...d].reverse();
+    roiChart.data.labels = sorted.map(x => x.semana);
+    roiChart.data.datasets[0].data = sorted.map(x => +(x.roi * 100).toFixed(1));
+    roiChart.update();
+  } catch(e) {}
+}
+
+async function loadTabla() {
+  try {
+    const r = await fetch(`${API}/apuestas`);
+    const data = await r.json();
+    const tbody = document.getElementById('tabla-body');
+
+    if (!data.length) {
+      tbody.innerHTML = '<tr><td colspan="9" style="color:var(--muted);text-align:center;padding:2rem;">Sin apuestas aún</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = data.map(a => {
+      const fecha = a.timestamp ? a.timestamp.slice(0,16).replace('T',' ') : '—';
+      const sport = a.sport?.includes('soccer') ? '<span class="badge badge-soccer">⚽ FÚTBOL</span>' : '<span class="badge badge-nba">🏀 BBALL</span>';
+      const res   = a.resultado === 'ganada'   ? '<span class="badge badge-ganada">GANADA</span>'
+                  : a.resultado === 'perdida'  ? '<span class="badge badge-perdida">PERDIDA</span>'
+                  : '<span class="badge badge-pendiente">PENDIENTE</span>';
+      const pnl   = a.ganancia > 0 ? `<span class="positive">+$${a.ganancia.toFixed(2)}</span>`
+                  : a.ganancia < 0 ? `<span class="negative">$${a.ganancia.toFixed(2)}</span>`
+                  : '<span style="color:var(--muted)">—</span>';
+      const btn   = a.resultado === 'pendiente'
+        ? `<button class="btn-resultado" onclick="abrirModal(${a.id},'${a.partido.replace(/'/g,"\\'")}','${a.seleccion}',${a.monto})">Registrar</button>`
+        : '';
+
+      return `<tr>
+        <td style="color:var(--muted);font-size:0.7rem;">${fecha}</td>
+        <td>${sport} ${a.partido}</td>
+        <td style="color:var(--accent2);">${a.seleccion}</td>
+        <td>${a.cuota}</td>
+        <td>$${a.monto?.toFixed(2)}</td>
+        <td>${(a.confianza*100).toFixed(0)}%</td>
+        <td>${res}</td>
+        <td>${pnl}</td>
+        <td>${btn}</td>
+      </tr>`;
+    }).join('');
+  } catch(e) {
+    console.error('Error cargando apuestas:', e);
+  }
+}
+
+// ---- Modal ----
+function abrirModal(id, partido, seleccion, monto) {
+  apuestaActiva = { id, monto };
+  document.getElementById('modal-info').textContent = `${partido} → ${seleccion} ($${monto?.toFixed(2)})`;
+  document.getElementById('ganancia-input').value = '';
+  document.getElementById('modal').classList.add('open');
+}
+
+function cerrarModal() {
+  document.getElementById('modal').classList.remove('open');
+  apuestaActiva = null;
+}
+
+async function guardarResultado(resultado) {
+  if (!apuestaActiva) return;
+  const ganancia = parseFloat(document.getElementById('ganancia-input').value);
+  if (isNaN(ganancia)) { alert('Ingresa la ganancia/pérdida en USD'); return; }
+
+  try {
+    await fetch(`${API}/resultado`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: apuestaActiva.id, resultado, ganancia })
+    });
+    cerrarModal();
+    loadAll();
+  } catch(e) {
+    alert('Error guardando resultado. Asegúrate que el servidor Flask está corriendo.');
+  }
+}
+
+// ---- Init ----
+function loadAll() {
+  loadStats();
+  loadBankrollChart();
+  loadROIChart();
+  loadTabla();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initCharts();
+  loadAll();
+  setInterval(loadAll, 30000); // refresca cada 30s
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,763 @@
+2026-03-19 11:53:27,716 [INFO] Inicializando agente...
+2026-03-19 11:53:27,717 [INFO] Bankroll inicial registrado: $300.00
+2026-03-19 11:53:27,718 [INFO] Agente listo.
+2026-03-19 11:53:27,718 [INFO] Ejecutando primer ciclo inmediatamente...
+2026-03-19 11:53:27,718 [INFO] =======================================================
+2026-03-19 11:53:27,718 [INFO]   INICIO DE CICLO DE ANÁLISIS
+2026-03-19 11:53:27,718 [INFO] =======================================================
+2026-03-19 11:53:27,718 [INFO] ✅ Agente operativo. Margen: 3 semana(s) antes de eliminación.
+2026-03-19 11:53:27,718 [INFO] Obteniendo partidos del día...
+2026-03-19 11:53:28,512 [INFO] 8 partidos encontrados para analizar.
+2026-03-19 11:53:28,512 [INFO] Analizando: Washington Wizards vs Detroit Pistons...
+2026-03-19 11:53:28,878 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:28,880 [INFO]   ⏭  PASAR → Washington Wizards vs Detroit Pistons | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:28,880 [INFO] Analizando: Charlotte Hornets vs Orlando Magic...
+2026-03-19 11:53:29,140 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:29,141 [INFO]   ⏭  PASAR → Charlotte Hornets vs Orlando Magic | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:29,141 [INFO] Analizando: Chicago Bulls vs Cleveland Cavaliers...
+2026-03-19 11:53:29,501 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:29,502 [INFO]   ⏭  PASAR → Chicago Bulls vs Cleveland Cavaliers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:29,502 [INFO] Analizando: New Orleans Pelicans vs Los Angeles Clippers...
+2026-03-19 11:53:29,753 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:29,754 [INFO]   ⏭  PASAR → New Orleans Pelicans vs Los Angeles Clippers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:29,754 [INFO] Analizando: Miami Heat vs Los Angeles Lakers...
+2026-03-19 11:53:30,005 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:30,006 [INFO]   ⏭  PASAR → Miami Heat vs Los Angeles Lakers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:30,006 [INFO] Analizando: San Antonio Spurs vs Phoenix Suns...
+2026-03-19 11:53:30,263 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:30,264 [INFO]   ⏭  PASAR → San Antonio Spurs vs Phoenix Suns | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:30,265 [INFO] Analizando: Utah Jazz vs Milwaukee Bucks...
+2026-03-19 11:53:30,525 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:30,526 [INFO]   ⏭  PASAR → Utah Jazz vs Milwaukee Bucks | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:30,527 [INFO] Analizando: Sacramento Kings vs Philadelphia 76ers...
+2026-03-19 11:53:30,780 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:53:30,781 [INFO]   ⏭  PASAR → Sacramento Kings vs Philadelphia 76ers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:53:30,781 [INFO] 
+Resumen: 0 apuestas recomendadas de 8 partidos analizados.
+2026-03-19 11:53:30,782 [INFO] Stats globales → Win rate: 0.0% | ROI: 0.0% | Total apuestas: 0
+2026-03-19 11:53:30,782 [INFO] 
+⏰ Scheduler activo. Próximos ciclos: 9:00 y 18:00 diariamente.
+2026-03-19 11:53:30,782 [INFO]    Ctrl+C para detener.
+
+2026-03-19 11:59:11,931 [INFO] Inicializando agente...
+2026-03-19 11:59:11,932 [INFO] Bankroll actual: $300.00
+2026-03-19 11:59:11,932 [INFO] Agente listo.
+2026-03-19 11:59:11,933 [INFO] Ejecutando primer ciclo inmediatamente...
+2026-03-19 11:59:11,933 [INFO] =======================================================
+2026-03-19 11:59:11,933 [INFO]   INICIO DE CICLO DE ANÁLISIS
+2026-03-19 11:59:11,933 [INFO] =======================================================
+2026-03-19 11:59:11,933 [INFO] ✅ Agente operativo. Margen: 3 semana(s) antes de eliminación.
+2026-03-19 11:59:11,933 [INFO] Obteniendo partidos del día...
+2026-03-19 11:59:12,720 [INFO] 8 partidos encontrados para analizar.
+2026-03-19 11:59:12,721 [INFO] Analizando: Washington Wizards vs Detroit Pistons...
+2026-03-19 11:59:13,028 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:13,029 [INFO]   ⏭  PASAR → Washington Wizards vs Detroit Pistons | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:13,030 [INFO] Analizando: Charlotte Hornets vs Orlando Magic...
+2026-03-19 11:59:13,282 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:13,283 [INFO]   ⏭  PASAR → Charlotte Hornets vs Orlando Magic | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:13,283 [INFO] Analizando: Chicago Bulls vs Cleveland Cavaliers...
+2026-03-19 11:59:13,530 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:13,531 [INFO]   ⏭  PASAR → Chicago Bulls vs Cleveland Cavaliers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:13,531 [INFO] Analizando: New Orleans Pelicans vs Los Angeles Clippers...
+2026-03-19 11:59:13,784 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:13,785 [INFO]   ⏭  PASAR → New Orleans Pelicans vs Los Angeles Clippers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:13,785 [INFO] Analizando: Miami Heat vs Los Angeles Lakers...
+2026-03-19 11:59:14,190 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:14,191 [INFO]   ⏭  PASAR → Miami Heat vs Los Angeles Lakers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:14,191 [INFO] Analizando: San Antonio Spurs vs Phoenix Suns...
+2026-03-19 11:59:14,542 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:14,543 [INFO]   ⏭  PASAR → San Antonio Spurs vs Phoenix Suns | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:14,543 [INFO] Analizando: Utah Jazz vs Milwaukee Bucks...
+2026-03-19 11:59:14,790 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:14,791 [INFO]   ⏭  PASAR → Utah Jazz vs Milwaukee Bucks | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:14,791 [INFO] Analizando: Sacramento Kings vs Philadelphia 76ers...
+2026-03-19 11:59:15,044 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 11:59:15,045 [INFO]   ⏭  PASAR → Sacramento Kings vs Philadelphia 76ers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 11:59:15,045 [INFO] 
+Resumen: 0 apuestas recomendadas de 8 partidos analizados.
+2026-03-19 11:59:15,046 [INFO] Stats globales → Win rate: 0.0% | ROI: 0.0% | Total apuestas: 0
+2026-03-19 11:59:15,047 [INFO] 
+⏰ Scheduler activo. Próximos ciclos: 9:00 y 18:00 diariamente.
+2026-03-19 11:59:15,047 [INFO]    Ctrl+C para detener.
+
+2026-03-19 12:00:04,774 [INFO] Inicializando agente...
+2026-03-19 12:00:04,775 [INFO] Bankroll actual: $300.00
+2026-03-19 12:00:04,775 [INFO] Agente listo.
+2026-03-19 12:00:04,775 [INFO] Ejecutando primer ciclo inmediatamente...
+2026-03-19 12:00:04,775 [INFO] =======================================================
+2026-03-19 12:00:04,775 [INFO]   INICIO DE CICLO DE ANÁLISIS
+2026-03-19 12:00:04,775 [INFO] =======================================================
+2026-03-19 12:00:04,775 [INFO] ✅ Agente operativo. Margen: 3 semana(s) antes de eliminación.
+2026-03-19 12:00:04,775 [INFO] Obteniendo partidos del día...
+2026-03-19 12:00:15,759 [WARNING] No se encontraron partidos. Reintentando en el próximo ciclo.
+2026-03-19 12:00:15,759 [INFO] 
+⏰ Scheduler activo. Próximos ciclos: 9:00 y 18:00 diariamente.
+2026-03-19 12:00:15,759 [INFO]    Ctrl+C para detener.
+
+2026-03-19 12:04:43,370 [INFO] Inicializando agente...
+2026-03-19 12:04:43,371 [INFO] Bankroll actual: $300.00
+2026-03-19 12:04:43,371 [INFO] Agente listo.
+2026-03-19 12:04:43,371 [INFO] Ejecutando primer ciclo inmediatamente...
+2026-03-19 12:04:43,371 [INFO] =======================================================
+2026-03-19 12:04:43,371 [INFO]   INICIO DE CICLO DE ANÁLISIS
+2026-03-19 12:04:43,371 [INFO] =======================================================
+2026-03-19 12:04:43,372 [INFO] ✅ Agente operativo. Margen: 3 semana(s) antes de eliminación.
+2026-03-19 12:04:43,372 [INFO] Obteniendo partidos del día...
+2026-03-19 12:04:44,169 [INFO] 8 partidos encontrados para analizar.
+2026-03-19 12:04:44,170 [INFO] Analizando: Washington Wizards vs Detroit Pistons...
+2026-03-19 12:04:44,468 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:44,469 [INFO]   ⏭  PASAR → Washington Wizards vs Detroit Pistons | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:44,469 [INFO] Analizando: Charlotte Hornets vs Orlando Magic...
+2026-03-19 12:04:44,711 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:44,712 [INFO]   ⏭  PASAR → Charlotte Hornets vs Orlando Magic | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:44,712 [INFO] Analizando: Chicago Bulls vs Cleveland Cavaliers...
+2026-03-19 12:04:44,966 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:44,967 [INFO]   ⏭  PASAR → Chicago Bulls vs Cleveland Cavaliers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:44,967 [INFO] Analizando: New Orleans Pelicans vs Los Angeles Clippers...
+2026-03-19 12:04:45,235 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:45,237 [INFO]   ⏭  PASAR → New Orleans Pelicans vs Los Angeles Clippers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:45,237 [INFO] Analizando: Miami Heat vs Los Angeles Lakers...
+2026-03-19 12:04:45,490 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:45,491 [INFO]   ⏭  PASAR → Miami Heat vs Los Angeles Lakers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:45,492 [INFO] Analizando: San Antonio Spurs vs Phoenix Suns...
+2026-03-19 12:04:45,742 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:45,743 [INFO]   ⏭  PASAR → San Antonio Spurs vs Phoenix Suns | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:45,744 [INFO] Analizando: Utah Jazz vs Milwaukee Bucks...
+2026-03-19 12:04:45,996 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:45,997 [INFO]   ⏭  PASAR → Utah Jazz vs Milwaukee Bucks | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:45,997 [INFO] Analizando: Sacramento Kings vs Philadelphia 76ers...
+2026-03-19 12:04:46,241 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:04:46,242 [INFO]   ⏭  PASAR → Sacramento Kings vs Philadelphia 76ers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:04:46,242 [INFO] 
+Resumen: 0 apuestas recomendadas de 8 partidos analizados.
+2026-03-19 12:04:46,243 [INFO] Stats globales → Win rate: 0.0% | ROI: 0.0% | Total apuestas: 0
+2026-03-19 12:04:46,243 [INFO] 
+⏰ Scheduler activo. Próximos ciclos: 9:00 y 18:00 diariamente.
+2026-03-19 12:04:46,243 [INFO]    Ctrl+C para detener.
+
+2026-03-19 12:05:59,112 [INFO] Inicializando agente...
+2026-03-19 12:05:59,112 [INFO] Bankroll actual: $300.00
+2026-03-19 12:05:59,113 [INFO] Agente listo.
+2026-03-19 12:05:59,113 [INFO] Ejecutando primer ciclo inmediatamente...
+2026-03-19 12:05:59,113 [INFO] =======================================================
+2026-03-19 12:05:59,113 [INFO]   INICIO DE CICLO DE ANÁLISIS
+2026-03-19 12:05:59,113 [INFO] =======================================================
+2026-03-19 12:05:59,113 [INFO] ✅ Agente operativo. Margen: 3 semana(s) antes de eliminación.
+2026-03-19 12:05:59,113 [INFO] Obteniendo partidos del día...
+2026-03-19 12:05:59,897 [INFO] 8 partidos encontrados para analizar.
+2026-03-19 12:05:59,897 [INFO] Analizando: Washington Wizards vs Detroit Pistons...
+2026-03-19 12:06:00,201 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:00,203 [INFO]   ⏭  PASAR → Washington Wizards vs Detroit Pistons | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:00,203 [INFO] Analizando: Charlotte Hornets vs Orlando Magic...
+2026-03-19 12:06:00,459 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:00,460 [INFO]   ⏭  PASAR → Charlotte Hornets vs Orlando Magic | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:00,460 [INFO] Analizando: Chicago Bulls vs Cleveland Cavaliers...
+2026-03-19 12:06:00,707 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:00,708 [INFO]   ⏭  PASAR → Chicago Bulls vs Cleveland Cavaliers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:00,708 [INFO] Analizando: New Orleans Pelicans vs Los Angeles Clippers...
+2026-03-19 12:06:00,958 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:00,959 [INFO]   ⏭  PASAR → New Orleans Pelicans vs Los Angeles Clippers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:00,959 [INFO] Analizando: Miami Heat vs Los Angeles Lakers...
+2026-03-19 12:06:01,269 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:01,270 [INFO]   ⏭  PASAR → Miami Heat vs Los Angeles Lakers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:01,270 [INFO] Analizando: San Antonio Spurs vs Phoenix Suns...
+2026-03-19 12:06:01,518 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:01,520 [INFO]   ⏭  PASAR → San Antonio Spurs vs Phoenix Suns | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:01,520 [INFO] Analizando: Utah Jazz vs Milwaukee Bucks...
+2026-03-19 12:06:01,769 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:01,770 [INFO]   ⏭  PASAR → Utah Jazz vs Milwaukee Bucks | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:01,770 [INFO] Analizando: Sacramento Kings vs Philadelphia 76ers...
+2026-03-19 12:06:02,026 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:06:02,027 [INFO]   ⏭  PASAR → Sacramento Kings vs Philadelphia 76ers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:06:02,027 [INFO] 
+Resumen: 0 apuestas recomendadas de 8 partidos analizados.
+2026-03-19 12:06:02,028 [INFO] Stats globales → Win rate: 0.0% | ROI: 0.0% | Total apuestas: 0
+2026-03-19 12:06:02,028 [INFO] 
+⏰ Scheduler activo. Próximos ciclos: 9:00 y 18:00 diariamente.
+2026-03-19 12:06:02,028 [INFO]    Ctrl+C para detener.
+
+2026-03-19 12:08:40,215 [INFO] Inicializando agente...
+2026-03-19 12:08:40,215 [INFO] Bankroll actual: $300.00
+2026-03-19 12:08:40,216 [INFO] Agente listo.
+2026-03-19 12:08:40,216 [INFO] Ejecutando primer ciclo inmediatamente...
+2026-03-19 12:08:40,216 [INFO] =======================================================
+2026-03-19 12:08:40,216 [INFO]   INICIO DE CICLO DE ANÁLISIS
+2026-03-19 12:08:40,216 [INFO] =======================================================
+2026-03-19 12:08:40,216 [INFO] ✅ Agente operativo. Margen: 3 semana(s) antes de eliminación.
+2026-03-19 12:08:40,216 [INFO] Obteniendo partidos del día...
+2026-03-19 12:08:41,050 [INFO] 8 partidos encontrados para analizar.
+2026-03-19 12:08:41,050 [INFO] Analizando: Washington Wizards vs Detroit Pistons...
+2026-03-19 12:08:41,383 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:41,384 [INFO]   ⏭  PASAR → Washington Wizards vs Detroit Pistons | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:41,385 [INFO] Analizando: Charlotte Hornets vs Orlando Magic...
+2026-03-19 12:08:41,687 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:41,689 [INFO]   ⏭  PASAR → Charlotte Hornets vs Orlando Magic | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:41,689 [INFO] Analizando: Chicago Bulls vs Cleveland Cavaliers...
+2026-03-19 12:08:41,946 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:41,947 [INFO]   ⏭  PASAR → Chicago Bulls vs Cleveland Cavaliers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:41,947 [INFO] Analizando: New Orleans Pelicans vs Los Angeles Clippers...
+2026-03-19 12:08:42,236 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:42,238 [INFO]   ⏭  PASAR → New Orleans Pelicans vs Los Angeles Clippers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:42,238 [INFO] Analizando: Miami Heat vs Los Angeles Lakers...
+2026-03-19 12:08:42,496 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:42,498 [INFO]   ⏭  PASAR → Miami Heat vs Los Angeles Lakers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:42,498 [INFO] Analizando: San Antonio Spurs vs Phoenix Suns...
+2026-03-19 12:08:42,759 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:42,760 [INFO]   ⏭  PASAR → San Antonio Spurs vs Phoenix Suns | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:42,760 [INFO] Analizando: Utah Jazz vs Milwaukee Bucks...
+2026-03-19 12:08:43,142 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:43,144 [INFO]   ⏭  PASAR → Utah Jazz vs Milwaukee Bucks | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:43,144 [INFO] Analizando: Sacramento Kings vs Philadelphia 76ers...
+2026-03-19 12:08:43,401 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-03-19 12:08:43,402 [INFO]   ⏭  PASAR → Sacramento Kings vs Philadelphia 76ers | Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', '
+2026-03-19 12:08:43,403 [INFO] 
+Resumen: 0 apuestas recomendadas de 8 partidos analizados.
+2026-03-19 12:08:43,404 [INFO] Stats globales → Win rate: 0.0% | ROI: 0.0% | Total apuestas: 0
+2026-03-19 12:08:43,404 [INFO] 
+⏰ Scheduler activo. Próximos ciclos: 9:00 y 18:00 diariamente.
+2026-03-19 12:08:43,404 [INFO]    Ctrl+C para detener.
+
+2026-03-19 12:20:16,854 [INFO] Inicializando agente...
+2026-03-19 12:20:16,855 [INFO] Bankroll actual: $300.00
+2026-03-19 12:20:16,856 [INFO] Agente listo.
+2026-03-19 12:20:16,856 [INFO] Ejecutando primer ciclo inmediatamente...
+2026-03-19 12:20:16,856 [INFO] =======================================================
+2026-03-19 12:20:16,856 [INFO]   INICIO DE CICLO DE ANÁLISIS
+2026-03-19 12:20:16,856 [INFO] =======================================================
+2026-03-19 12:20:16,856 [INFO] ✅ Agente operativo. Margen: 3 semana(s) antes de eliminación.
+2026-03-19 12:20:16,856 [INFO] Obteniendo partidos del día...
+2026-03-19 12:20:17,625 [INFO] 8 partidos encontrados para analizar.
+2026-03-19 12:20:17,625 [INFO] Analizando: Washington Wizards vs Detroit Pistons...
+2026-03-19 12:20:22,760 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:22,784 [INFO]   ⏭  PASAR → Washington Wizards vs Detroit Pistons | Confianza 0% < umbral 62%. Las cuotas extremas (1.12 vs 9.0) indican un favorito
+2026-03-19 12:20:22,784 [INFO] Analizando: Charlotte Hornets vs Orlando Magic...
+2026-03-19 12:20:27,335 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:27,337 [INFO]   ✅ APOSTAR → Orlando Magic @ 2.94 | confianza: 75% | monto: $6.00
+2026-03-19 12:20:27,337 [INFO]      Razón: Orlando Magic tiene mejor roster y estructura organizacional que Charlotte. Los Hornets han mostrado inconsistencia histórica y problemas defensivos. Con Magic como underdog a 2.94, hay value considerando su potencial de desarrollo y ventaja en coaching.
+2026-03-19 12:20:27,339 [INFO] Analizando: Chicago Bulls vs Cleveland Cavaliers...
+2026-03-19 12:20:31,938 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:31,940 [INFO]   ⏭  PASAR → Chicago Bulls vs Cleveland Cavaliers | Confianza 25% < umbral 62%. Aunque Bulls tiene cuota atractiva, Cleveland es his
+2026-03-19 12:20:31,940 [INFO] Analizando: New Orleans Pelicans vs Los Angeles Clippers...
+2026-03-19 12:20:36,059 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:36,061 [INFO]   ⏭  PASAR → New Orleans Pelicans vs Los Angeles Clippers | Confianza 0% < umbral 62%. Partido en fecha futura (marzo 2026) sin datos actual
+2026-03-19 12:20:36,061 [INFO] Analizando: Miami Heat vs Los Angeles Lakers...
+2026-03-19 12:20:40,387 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:40,389 [INFO]   ⏭  PASAR → Miami Heat vs Los Angeles Lakers | Confianza 0% < umbral 62%. Sin datos suficientes de forma reciente, lesiones o c
+2026-03-19 12:20:40,389 [INFO] Analizando: San Antonio Spurs vs Phoenix Suns...
+2026-03-19 12:20:44,903 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:44,905 [INFO]   ⏭  PASAR → San Antonio Spurs vs Phoenix Suns | Confianza 0% < umbral 62%. Las cuotas no ofrecen value suficiente. Spurs favorit
+2026-03-19 12:20:44,905 [INFO] Analizando: Utah Jazz vs Milwaukee Bucks...
+2026-03-19 12:20:49,331 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:49,333 [INFO]   ⏭  PASAR → Utah Jazz vs Milwaukee Bucks | Confianza 0% < umbral 62%. Sin datos actuales de temporada 2025-26, forma de equ
+2026-03-19 12:20:49,333 [INFO] Analizando: Sacramento Kings vs Philadelphia 76ers...
+2026-03-19 12:20:53,302 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 12:20:53,304 [INFO]   ⏭  PASAR → Sacramento Kings vs Philadelphia 76ers | Confianza 0% < umbral 62%. Fecha del partido es marzo 2026 (futuro). Sin datos a
+2026-03-19 12:20:53,304 [INFO] 
+Resumen: 1 apuestas recomendadas de 8 partidos analizados.
+2026-03-19 12:20:53,305 [INFO] Stats globales → Win rate: 0.0% | ROI: 0.0% | Total apuestas: 0
+2026-03-19 12:20:53,305 [INFO] 
+⏰ Scheduler activo. Próximos ciclos: 9:00 y 18:00 diariamente.
+2026-03-19 12:20:53,305 [INFO]    Ctrl+C para detener.
+
+2026-03-19 13:02:38,872 [INFO] Inicializando agente...
+2026-03-19 13:02:38,873 [INFO] Bankroll actual: $300.00
+2026-03-19 13:02:38,873 [INFO] Agente listo.
+2026-03-19 13:02:38,873 [INFO] Ejecutando primer ciclo...
+2026-03-19 13:02:38,873 [INFO] ============================================================
+2026-03-19 13:02:38,873 [INFO]   INICIO DE CICLO DE ANALISIS
+2026-03-19 13:02:38,873 [INFO] ============================================================
+2026-03-19 13:02:38,874 [INFO] Agente operativo. Margen: 3 semana(s) antes de eliminacion.
+2026-03-19 13:02:38,874 [INFO] Obteniendo partidos del dia...
+2026-03-19 13:02:43,450 [WARNING] No se encontraron partidos. Reintentando en el proximo ciclo.
+2026-03-19 13:02:43,451 [INFO] 
+Scheduler activo: 9:00 y 18:00 diariamente. Ctrl+C para detener.
+
+2026-03-19 13:04:17,614 [INFO] Inicializando agente...
+2026-03-19 13:04:17,618 [INFO] Bankroll actual: $300.00
+2026-03-19 13:04:17,619 [INFO] Agente listo.
+2026-03-19 13:04:17,619 [INFO] Ejecutando primer ciclo...
+2026-03-19 13:04:17,619 [INFO] ============================================================
+2026-03-19 13:04:17,619 [INFO]   INICIO DE CICLO DE ANALISIS
+2026-03-19 13:04:17,619 [INFO] ============================================================
+2026-03-19 13:04:17,619 [INFO] Agente operativo. Margen: 3 semana(s) antes de eliminacion.
+2026-03-19 13:04:17,619 [INFO] Obteniendo partidos del dia...
+2026-03-19 13:04:22,617 [INFO] 151 partidos encontrados.
+2026-03-19 13:04:22,618 [INFO] Analizando partidos (minimo 3 apuestas por dia)...
+2026-03-19 13:04:28,018 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:04:32,908 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:04:37,368 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:04:41,592 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:04:46,429 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:04:51,536 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:04:55,616 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:00,385 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:04,916 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:09,542 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:13,346 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:18,049 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:22,904 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:28,480 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:33,540 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:38,918 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:43,336 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:48,218 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:53,004 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:05:57,745 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:02,778 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:07,954 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:12,792 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:17,357 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:21,676 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:25,925 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:30,630 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:34,963 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:39,350 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:44,206 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:48,754 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:53,185 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:06:58,208 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:03,183 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:08,929 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:14,266 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:19,123 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:23,753 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:28,277 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:32,936 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:37,305 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:41,926 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:47,504 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:52,419 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:07:57,059 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:01,497 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:05,895 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:10,084 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:15,935 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:20,268 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:25,161 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:29,837 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:34,015 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:38,532 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:43,410 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:48,040 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:52,971 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:08:57,650 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:02,164 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:07,084 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:11,286 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:16,651 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:21,773 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:26,721 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:31,480 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:35,888 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:40,951 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:46,468 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:51,084 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:09:55,430 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:00,009 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:04,849 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:09,480 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:14,027 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:19,985 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:24,646 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:29,291 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:34,363 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:39,972 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:46,829 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:51,858 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:10:59,917 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:04,848 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:09,911 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:13,904 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:18,941 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:24,006 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:28,596 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:33,315 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:37,717 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:42,302 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:46,930 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:52,188 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:11:56,989 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:01,400 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:06,156 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:10,926 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:15,523 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:19,675 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:26,287 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:31,272 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:35,943 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:41,020 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:46,349 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:51,584 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:12:55,990 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:00,095 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:04,590 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:09,048 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:13,497 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:17,692 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:21,573 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:26,643 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:30,994 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:35,669 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:42,495 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:46,889 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:52,295 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:13:57,709 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:02,191 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:06,411 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:11,092 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:15,900 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:20,024 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:24,655 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:28,690 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:33,020 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:37,960 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:42,800 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:47,960 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:53,472 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:14:58,662 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:03,246 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:08,463 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:13,099 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:17,747 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:23,099 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:28,355 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:33,340 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:38,229 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:44,278 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:49,082 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:53,395 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:15:58,497 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:02,834 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:07,988 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:13,269 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:18,060 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:23,150 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:28,306 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:33,653 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-03-19 13:16:33,655 [INFO]   PASAR -> Washington Wizards vs Detroit Pistons | Confianza 58% < umbral 62%. No hay value betting - la cuota 1.14 de Detroit impl
+2026-03-19 13:16:33,656 [INFO]   PASAR -> Charlotte Hornets vs Orlando Magic | Confianza 45% < umbral 62%. fecha futura (marzo 2026) sin datos actuales disponi
+2026-03-19 13:16:33,656 [INFO]   PASAR -> Chicago Bulls vs Cleveland Cavaliers | Confianza 58% < umbral 62%. Aunque Cleveland debería ganar, la cuota 1.21 ofrece
+2026-03-19 13:16:33,656 [INFO]   PASAR -> New Orleans Pelicans vs Los Angeles Clippers | Confianza 55% < umbral 62%. fecha futura (marzo 2026) sin datos actuales disponi
+2026-03-19 13:16:33,656 [INFO]   PASAR -> Miami Heat vs Los Angeles Lakers | Confianza 45% < umbral 62%. fecha muy lejana (marzo 2026), sin datos actuales de
+2026-03-19 13:16:33,656 [INFO]   PASAR -> San Antonio Spurs vs Phoenix Suns | Confianza 55% < umbral 62%. No hay value betting - la cuota 1.27 implica 78.7% d
+2026-03-19 13:16:33,656 [INFO]   PASAR -> Utah Jazz vs Milwaukee Bucks | Confianza 58% < umbral 62%. Aunque Milwaukee es claramente superior, la cuota 1.
+2026-03-19 13:16:33,656 [INFO]   PASAR -> Sacramento Kings vs Philadelphia 76ers | Confianza 45% < umbral 62%. No tengo información actualizada sobre la temporada 
+2026-03-19 13:16:33,656 [INFO] 
+  APOSTAR -> Ohio State Buckeyes
+2026-03-19 13:16:33,656 [INFO]   Partido:   Ohio State Buckeyes vs TCU Horned Frogs
+2026-03-19 13:16:33,656 [INFO]   Cuota:     1.63
+2026-03-19 13:16:33,656 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,656 [INFO]   Tendencia: Ohio State históricamente dominante en March Madness con mejor recruiting y profundidad de plantilla
+2026-03-19 13:16:33,657 [INFO]   Razon:     Ohio State es programa de élite con mayor talento y experiencia en torneos NCAA. TCU tiene cuota inflada por ser underdog extremo pero carece del nivel para competir contra Buckeyes
+2026-03-19 13:16:33,660 [INFO]   PASAR -> Nebraska Cornhuskers vs Troy Trojans | Confianza 45% < umbral 62%. No hay value betting - Nebraska es favorito pero cuo
+2026-03-19 13:16:33,660 [INFO]   PASAR -> Louisville Cardinals vs South Florida Bulls | Confianza 58% < umbral 62%. Confianza por debajo del umbral minimo 62%. Sin info
+2026-03-19 13:16:33,660 [INFO]   PASAR -> Wisconsin Badgers vs High Point Panthers | Confianza 55% < umbral 62%. Aunque Wisconsin debería ganar fácilmente contra Hig
+2026-03-19 13:16:33,660 [INFO]   PASAR -> Duke Blue Devils vs Siena Saints | Aunque Duke deberia ganar facilmente, la cuota 1.01 no ofrece value - necesitari
+2026-03-19 13:16:33,660 [INFO]   PASAR -> Vanderbilt Commodores vs McNeese Cowboys | Confianza 45% < umbral 62%. La cuota de Vanderbilt 1.16 no ofrece value (prob. i
+2026-03-19 13:16:33,660 [INFO]   PASAR -> Michigan St Spartans vs North Dakota St Bison | Confianza 45% < umbral 62%. No hay value betting. Michigan State debería ganar p
+2026-03-19 13:16:33,660 [INFO]   PASAR -> Arkansas Razorbacks vs Hawai'i Rainbow Warriors | Confianza 58% < umbral 62%. Arkansas debería ganar fácilmente pero cuota 1.09 no
+2026-03-19 13:16:33,660 [INFO] 
+  APOSTAR -> North Carolina Tar Heels
+2026-03-19 13:16:33,660 [INFO]   Partido:   North Carolina Tar Heels vs VCU Rams
+2026-03-19 13:16:33,660 [INFO]   Cuota:     1.78
+2026-03-19 13:16:33,660 [INFO]   Confianza: 72% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,660 [INFO]   Tendencia: UNC es un programa tradicionalmente fuerte con mejor talento y profundidad de roster
+2026-03-19 13:16:33,660 [INFO]   Razon:     North Carolina tiene ventaja significativa en talento, experiencia en March Madness y coaching. La cuota 1.78 ofrece value considerando que UNC debería ganar este matchup 65% de las veces
+2026-03-19 13:16:33,662 [INFO]   PASAR -> Michigan Wolverines vs Howard Bison | Aunque Michigan debería ganar fácilmente, la cuota 1.01 no ofrece value. Riesgo 
+2026-03-19 13:16:33,662 [INFO]   PASAR -> BYU Cougars vs Texas Longhorns | Confianza 45% < umbral 62%. fecha del partido es marzo 2026 (futuro), no tengo d
+2026-03-19 13:16:33,662 [INFO]   PASAR -> Saint Mary's Gaels vs Texas A&M Aggies | Confianza 45% < umbral 62%. Fecha futura (marzo 2026) sin contexto actual de tem
+2026-03-19 13:16:33,662 [INFO]   PASAR -> Illinois Fighting Illini vs Pennsylvania Quakers | Confianza 60% < umbral 62%. Aunque Illinois debería ganar fácilmente, la cuota d
+2026-03-19 13:16:33,662 [INFO]   PASAR -> Georgia Bulldogs vs Saint Louis Billikens | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,662 [INFO]   PASAR -> Gonzaga Bulldogs vs Kennesaw St Owls | Confianza 58% < umbral 62%. No hay value betting - probabilidad implicita 96.2% 
+2026-03-19 13:16:33,662 [INFO]   PASAR -> Houston Cougars vs Idaho Vandals | Confianza 45% < umbral 62%. Aunque Houston debería ganar fácilmente, la cuota de
+2026-03-19 13:16:33,662 [INFO] 
+  APOSTAR -> Kentucky Wildcats
+2026-03-19 13:16:33,662 [INFO]   Partido:   Kentucky Wildcats vs Santa Clara Broncos
+2026-03-19 13:16:33,662 [INFO]   Cuota:     1.7
+2026-03-19 13:16:33,662 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,662 [INFO]   Tendencia: Kentucky es programa de élite con mejor talento y experiencia en torneos
+2026-03-19 13:16:33,662 [INFO]   Razon:     Kentucky tiene superioridad clara en talento, coaching y experiencia en March Madness vs Santa Clara que es programa mid-major. La cuota 1.7 subestima la diferencia de nivel entre ambos programas
+2026-03-19 13:16:33,663 [INFO]   PASAR -> Texas Tech Red Raiders vs Akron Zips | Confianza 58% < umbral 62%. Aunque Texas Tech es superior, la cuota 1.33 ofrece 
+2026-03-19 13:16:33,663 [INFO]   PASAR -> Arizona Wildcats vs LIU Sharks | No hay value - cuota 1.01 ofrece retorno de solo 1% con riesgo innecesario. En b
+2026-03-19 13:16:33,663 [INFO]   PASAR -> Virginia Cavaliers vs Wright St Raiders | Confianza 58% < umbral 62%. No hay value betting - probabilidad implicita (94.3%
+2026-03-19 13:16:33,663 [INFO]   PASAR -> Iowa State Cyclones vs Tennessee St Tigers | Confianza 55% < umbral 62%. Cuota 1.02 no ofrece value betting - riesgo/recompen
+2026-03-19 13:16:33,663 [INFO]   PASAR -> Alabama Crimson Tide vs Hofstra Pride | Confianza 58% < umbral 62%. Aunque Alabama debería ganar, la cuota 1.16 ofrece v
+2026-03-19 13:16:33,663 [INFO] 
+  APOSTAR -> Villanova Wildcats
+2026-03-19 13:16:33,663 [INFO]   Partido:   Villanova Wildcats vs Utah State Aggies
+2026-03-19 13:16:33,663 [INFO]   Cuota:     2.16
+2026-03-19 13:16:33,664 [INFO]   Confianza: 68% | % Bankroll: 8% | Monto: $24.00
+2026-03-19 13:16:33,664 [INFO]   Tendencia: Villanova históricamente fuerte en March Madness con experiencia en torneos NCAA
+2026-03-19 13:16:33,664 [INFO]   Razon:     Villanova tiene pedigree superior en torneos NCAA y experiencia en partidos de alta presión. Utah State juega bien en casa pero en cancha neutral Villanova tiene ventaja por calidad de roster y coaching
+2026-03-19 13:16:33,665 [INFO]   PASAR -> Tennessee Volunteers vs Miami (OH) RedHawks | Confianza 58% < umbral 62%. Aunque Tennessee debería ganar fácilmente, la cuota 
+2026-03-19 13:16:33,665 [INFO]   PASAR -> Clemson Tigers vs Iowa Hawkeyes | Confianza 45% < umbral 62%. Confianza insuficiente (45% < 62% requerido). Sin da
+2026-03-19 13:16:33,665 [INFO]   PASAR -> St. John's Red Storm vs Northern Iowa Panthers | Confianza 58% < umbral 62%. Aunque St. John's debería ganar fácilmente, la cuota
+2026-03-19 13:16:33,665 [INFO]   PASAR -> UCLA Bruins vs UCF Knights | Confianza 45% < umbral 62%. fecha muy lejana (marzo 2026), no hay información ac
+2026-03-19 13:16:33,665 [INFO]   PASAR -> Purdue Boilermakers vs Queens University Royals | Confianza 30% < umbral 62%. cuota de Purdue (1.02) no ofrece value suficiente - 
+2026-03-19 13:16:33,665 [INFO]   PASAR -> Florida Gators vs Prairie View Panthers | Confianza 50% < umbral 62%. Cuota demasiado baja (1.01) sin value betting. Aunqu
+2026-03-19 13:16:33,665 [INFO]   PASAR -> Kansas Jayhawks vs Cal Baptist Lancers | Aunque Kansas debería ganar fácilmente, la cuota 1.11 no ofrece value suficiente
+2026-03-19 13:16:33,666 [INFO]   PASAR -> UConn Huskies vs Furman Paladins | Aunque UConn deberia ganar facilmente, la cuota de 1.03 no ofrece value suficien
+2026-03-19 13:16:33,666 [INFO]   PASAR -> Miami Hurricanes vs Missouri Tigers | Confianza 45% < umbral 62%. fecha futura (marzo 2026) sin información actualizad
+2026-03-19 13:16:33,666 [INFO] 
+  APOSTAR -> FC Barcelona Bàsquet
+2026-03-19 13:16:33,666 [INFO]   Partido:   Valencia Basket vs FC Barcelona Bàsquet
+2026-03-19 13:16:33,666 [INFO]   Cuota:     3.7
+2026-03-19 13:16:33,666 [INFO]   Confianza: 68% | % Bankroll: 8% | Monto: $24.00
+2026-03-19 13:16:33,666 [INFO]   Tendencia: Barcelona tradicionalmente fuerte en Euroleague con roster de calidad, Valencia irregular en casa
+2026-03-19 13:16:33,666 [INFO]   Razon:     Barcelona es historicamente superior en Euroleague y tiene mejor plantilla. La cuota 3.7 ofrece value considerando que Barcelona puede ganar ~38% de las veces contra Valencia
+2026-03-19 13:16:33,667 [INFO] 
+  APOSTAR -> Anadolu Efes
+2026-03-19 13:16:33,667 [INFO]   Partido:   Anadolu Efes vs AS Monaco
+2026-03-19 13:16:33,667 [INFO]   Cuota:     1.7
+2026-03-19 13:16:33,667 [INFO]   Confianza: 68% | % Bankroll: 12% | Monto: $36.00
+2026-03-19 13:16:33,667 [INFO]   Tendencia: Efes domina en casa en Euroleague con ventaja significativa de local
+2026-03-19 13:16:33,667 [INFO]   Razon:     Anadolu Efes jugando en casa tiene ventaja importante. Monaco es competitivo pero Efes en Estambul es muy fuerte historicamente en Euroleague. Value moderado en la cuota
+2026-03-19 13:16:33,668 [INFO]   PASAR -> Hapoel Tel Aviv vs Virtus Segafredo Bologna | Confianza 45% < umbral 62%. Aunque Hapoel Tel Aviv tiene ventaja como local en E
+2026-03-19 13:16:33,668 [INFO]   PASAR -> Olympiacos vs Saski Baskonia | Confianza 45% < umbral 62%. Cuotas extremadamente sesgadas sin value. Olympiacos
+2026-03-19 13:16:33,668 [INFO] 
+  APOSTAR -> FC Bayern München
+2026-03-19 13:16:33,668 [INFO]   Partido:   FC Bayern München vs Dubai Basketball
+2026-03-19 13:16:33,668 [INFO]   Cuota:     2.06
+2026-03-19 13:16:33,668 [INFO]   Confianza: 68% | % Bankroll: 8% | Monto: $24.00
+2026-03-19 13:16:33,668 [INFO]   Tendencia: Bayern tiene mejor roster establecido en Euroleague con experiencia en competiciones europeas
+2026-03-19 13:16:33,668 [INFO]   Razon:     Bayern juega como local y tiene ventaja en profundidad de plantilla y experiencia en Euroleague vs Dubai Basketball que es relativamente nuevo en esta competicion. Value moderado en la cuota.
+2026-03-19 13:16:33,669 [INFO] 
+  APOSTAR -> Paris Basketball
+2026-03-19 13:16:33,669 [INFO]   Partido:   Paris Basketball vs KK Partizan NIS
+2026-03-19 13:16:33,669 [INFO]   Cuota:     1.66
+2026-03-19 13:16:33,670 [INFO]   Confianza: 68% | % Bankroll: 10% | Monto: $30.00
+2026-03-19 13:16:33,670 [INFO]   Tendencia: Paris Basketball viene jugando solido como local en Euroleague, con mejor ritmo ofensivo
+2026-03-19 13:16:33,670 [INFO]   Razon:     Paris tiene ventaja de local significativa en basketball, mejor form reciente y Partizan históricamente lucha fuera de casa en Euroleague. Value moderado de 7.8% justifica apuesta conservadora
+2026-03-19 13:16:33,671 [INFO] 
+  APOSTAR -> Fenerbahce SK
+2026-03-19 13:16:33,671 [INFO]   Partido:   Fenerbahce SK vs Pallacanestro Olimpia Milano
+2026-03-19 13:16:33,671 [INFO]   Cuota:     1.37
+2026-03-19 13:16:33,671 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,671 [INFO]   Tendencia: Fenerbahce muy solido en casa con gran ventaja de local en Euroleague
+2026-03-19 13:16:33,671 [INFO]   Razon:     Fenerbahce jugando en Istanbul tiene ventaja significativa de local contra Milano. El equipo turco historicamente muy fuerte en casa en Euroleague y Milano suele tener dificultades como visitante en ambientes hostiles
+2026-03-19 13:16:33,672 [INFO] 
+  APOSTAR -> Real Madrid
+2026-03-19 13:16:33,672 [INFO]   Partido:   Žalgiris vs Real Madrid
+2026-03-19 13:16:33,672 [INFO]   Cuota:     2.0
+2026-03-19 13:16:33,672 [INFO]   Confianza: 72% | % Bankroll: 15% | Monto: $45.00
+2026-03-19 13:16:33,672 [INFO]   Tendencia: Real Madrid tiene mejor plantilla, experiencia en playoffs y ventaja en talento individual
+2026-03-19 13:16:33,672 [INFO]   Razon:     Real Madrid es históricamente superior a Žalgiris en Euroleague, con mejor roster y experiencia. Las cuotas están muy igualadas pero Madrid debería ser favorito claro
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Panathinaikos vs KK Crvena zvezda | Confianza 45% < umbral 62%. Las cuotas reflejan correctamente que Panathinaikos 
+2026-03-19 13:16:33,674 [INFO]   PASAR -> ASVEL Lyon Villeurbanne vs Maccabi Tel Aviv | Confianza 45% < umbral 62%. Confianza muy baja (45%) debido a falta de informaci
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Sydney Kings vs Adelaide 36ers | Confianza 58% < umbral 62%. Confianza por debajo del umbral del 62%. Aunque Sydn
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Bournemouth vs Manchester United | Confianza 50% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Brighton and Hove Albion vs Liverpool | Confianza 45% < umbral 62%. Partido de futbol pero se solicito analisis de baske
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Fulham vs Burnley | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Everton vs Chelsea | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Leeds United vs Brentford | Confianza 45% < umbral 62%. Sin datos actuales de Premier League 2026, forma rec
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Newcastle United vs Sunderland | Confianza 45% < umbral 62%. Este es un derby local muy impredecible. Sin datos r
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Aston Villa vs West Ham United | Confianza 45% < umbral 62%. No tengo suficiente informacion actualizada sobre la
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Tottenham Hotspur vs Nottingham Forest | Confianza 45% < umbral 62%. No tengo acceso a datos actualizados de 2026 para ev
+2026-03-19 13:16:33,674 [INFO]   PASAR -> West Ham United vs Wolverhampton Wanderers | Confianza 45% < umbral 62%. confianza por debajo del umbral minimo de 62% - nece
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Arsenal vs Bournemouth | Confianza 58% < umbral 62%. Arsenal favorito claro pero cuota muy baja sin value
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Nottingham Forest vs Aston Villa | Confianza 45% < umbral 62%. Las cuotas están muy equilibradas (Forest 36.8%, Vil
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Brentford vs Everton | Confianza 45% < umbral 62%. Este es un partido de futbol EPL pero me pides anali
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Burnley vs Brighton and Hove Albion | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,674 [INFO]   PASAR -> Crystal Palace vs Newcastle United | Confianza 45% < umbral 62%. No tengo información suficiente sobre la forma recie
+2026-03-19 13:16:33,674 [INFO] 
+  APOSTAR -> Liverpool
+2026-03-19 13:16:33,674 [INFO]   Partido:   Liverpool vs Fulham
+2026-03-19 13:16:33,674 [INFO]   Cuota:     1.56
+2026-03-19 13:16:33,674 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,674 [INFO]   Tendencia: Liverpool históricamente dominante en Anfield contra equipos de media tabla, con gran superioridad técnica y táctica
+2026-03-19 13:16:33,674 [INFO]   Razon:     Liverpool en casa contra Fulham presenta gran diferencia de nivel. La cuota 1.56 ofrece value considerando que Liverpool debería ganar este tipo de partidos 75% de las veces en Anfield
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Sunderland vs Tottenham Hotspur | Confianza 45% < umbral 62%. Este es un partido de futbol (Premier League) pero m
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Chelsea vs Manchester City | Confianza 45% < umbral 62%. Es un partido de futbol EPL muy equilibrado entre do
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Manchester United vs Leeds United | Confianza 45% < umbral 62%. Partido de fútbol pero me pides análisis de basketba
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Villarreal vs Real Sociedad | Confianza 45% < umbral 62%. No tengo información actualizada sobre forma recient
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Elche CF vs Mallorca | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Espanyol vs Getafe | Confianza 45% < umbral 62%. No tengo suficiente información actualizada sobre la
+2026-03-19 13:16:33,676 [INFO]   PASAR -> CA Osasuna vs Girona | Confianza 45% < umbral 62%. Confianza por debajo del umbral mínimo del 62%. Sin 
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Levante vs Oviedo | Confianza 45% < umbral 62%. No tengo suficiente información específica sobre el 
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Sevilla vs Valencia | Confianza 45% < umbral 62%. No tengo información específica sobre la forma recie
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Barcelona vs Rayo Vallecano | Confianza 55% < umbral 62%. Aunque Barcelona es claramente superior al Rayo Vall
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Celta Vigo vs Alavés | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,676 [INFO]   PASAR -> Athletic Bilbao vs Real Betis | Confianza 45% < umbral 62%. Este es un partido de FUTBOL de La Liga, no basketba
+2026-03-19 13:16:33,676 [INFO] 
+  APOSTAR -> Real Madrid
+2026-03-19 13:16:33,676 [INFO]   Partido:   Real Madrid vs Atlético Madrid
+2026-03-19 13:16:33,676 [INFO]   Cuota:     1.97
+2026-03-19 13:16:33,676 [INFO]   Confianza: 68% | % Bankroll: 8% | Monto: $24.00
+2026-03-19 13:16:33,676 [INFO]   Tendencia: Real Madrid históricamente dominante en clásicos, mejor plantel y ventaja psicológica
+2026-03-19 13:16:33,676 [INFO]   Razon:     Derbi madrileño con ligero value betting. Real Madrid tiene mejor historial reciente en clásicos, mayor calidad de plantel y experiencia en partidos de alta presión. Las cuotas subestiman ligeramente su probabilidad real de victoria
+2026-03-19 13:16:33,677 [INFO]   PASAR -> Rayo Vallecano vs Elche CF | Confianza 45% < umbral 62%. No tengo información suficiente sobre la forma recie
+2026-03-19 13:16:33,677 [INFO]   PASAR -> Real Sociedad vs Levante | Confianza 45% < umbral 62%. Este es un partido de FUTBOL de La Liga española, no
+2026-03-19 13:16:33,677 [INFO] 
+  APOSTAR -> Real Madrid
+2026-03-19 13:16:33,677 [INFO]   Partido:   Mallorca vs Real Madrid
+2026-03-19 13:16:33,677 [INFO]   Cuota:     1.65
+2026-03-19 13:16:33,677 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,677 [INFO]   Tendencia: Real Madrid históricamente dominante vs Mallorca, superior calidad de plantilla y motivación por La Liga
+2026-03-19 13:16:33,677 [INFO]   Razon:     Real Madrid tiene ventaja significativa en calidad, historial H2H favorable, y Mallorca tradicionalmente débil ante grandes. Value claro del 14.4%
+2026-03-19 13:16:33,678 [INFO]   PASAR -> Alavés vs CA Osasuna | Confianza 45% < umbral 62%. Partido muy equilibrado entre equipos de mitad de ta
+2026-03-19 13:16:33,678 [INFO]   PASAR -> Atlético Madrid vs Barcelona | Confianza 45% < umbral 62%. Este es un partido de fútbol, no basketball. Atlétic
+2026-03-19 13:16:33,678 [INFO]   PASAR -> Getafe vs Athletic Bilbao | Confianza 45% < umbral 62%. partido muy equilibrado entre equipos de medio tabla
+2026-03-19 13:16:33,678 [INFO]   PASAR -> Valencia vs Celta Vigo | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,678 [INFO]   PASAR -> Oviedo vs Sevilla | Confianza 45% < umbral 62%. Este es un partido de fútbol español pero me pides a
+2026-03-19 13:16:33,678 [INFO] 
+  APOSTAR -> Real Betis
+2026-03-19 13:16:33,678 [INFO]   Partido:   Real Betis vs Espanyol
+2026-03-19 13:16:33,678 [INFO]   Cuota:     1.79
+2026-03-19 13:16:33,678 [INFO]   Confianza: 74% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,678 [INFO]   Tendencia: Betis históricamente fuerte en casa contra equipos de menor nivel, tiende a dominar partidos ante rivales relegados
+2026-03-19 13:16:33,678 [INFO]   Razon:     Betis jugando en casa contra Espanyol que tradicionalmente lucha contra descenso. La ventaja de local en futbol es significativa y las cuotas no reflejan completamente esta ventaja histórica
+2026-03-19 13:16:33,679 [INFO]   PASAR -> Girona vs Villarreal | Confianza 45% < umbral 62%. Partido de La Liga en fecha futura (abril 2026) sin 
+2026-03-19 13:16:33,679 [INFO] 
+  APOSTAR -> Napoli
+2026-03-19 13:16:33,679 [INFO]   Partido:   Cagliari vs Napoli
+2026-03-19 13:16:33,679 [INFO]   Cuota:     1.69
+2026-03-19 13:16:33,679 [INFO]   Confianza: 72% | % Bankroll: 15% | Monto: $45.00
+2026-03-19 13:16:33,679 [INFO]   Tendencia: Napoli tradicionalmente superior a Cagliari, equipo de medio-alta tabla vs equipo que lucha por permanencia
+2026-03-19 13:16:33,679 [INFO]   Razon:     Diferencia de calidad significativa entre equipos, Napoli históricamente domina este H2H, ventaja visitante por jerarquía futbolística
+2026-03-19 13:16:33,681 [INFO]   PASAR -> Genoa vs Udinese | Confianza 45% < umbral 62%. Confianza muy baja (45%) debido a falta de informaci
+2026-03-19 13:16:33,681 [INFO]   PASAR -> Parma vs Cremonese | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,681 [INFO]   PASAR -> AC Milan vs Torino | Confianza 45% < umbral 62%. Este es un partido de FUTBOL de Serie A, no basketba
+2026-03-19 13:16:33,681 [INFO]   PASAR -> Juventus vs Sassuolo | Confianza 58% < umbral 62%. Aunque Juventus deberia ganar, la cuota 1.37 no ofre
+2026-03-19 13:16:33,681 [INFO]   PASAR -> Como vs Pisa | Confianza 45% < umbral 62%. Cuota 1.29 para Como no ofrece value - la probabilid
+2026-03-19 13:16:33,681 [INFO]   PASAR -> Atalanta BC vs Hellas Verona | Confianza 50% < umbral 62%. Este es futbol Serie A, no basketball. La cuota de A
+2026-03-19 13:16:33,681 [INFO]   PASAR -> Bologna vs Lazio | Confianza 45% < umbral 62%. partido de Serie A requiere conocimiento especifico 
+2026-03-19 13:16:33,681 [INFO]   PASAR -> AS Roma vs Lecce | Confianza 58% < umbral 62%. Aunque Roma es claramente superior a Lecce, la cuota
+2026-03-19 13:16:33,681 [INFO] 
+  APOSTAR -> Inter Milan
+2026-03-19 13:16:33,681 [INFO]   Partido:   Fiorentina vs Inter Milan
+2026-03-19 13:16:33,681 [INFO]   Cuota:     1.67
+2026-03-19 13:16:33,681 [INFO]   Confianza: 72% | % Bankroll: 15% | Monto: $45.00
+2026-03-19 13:16:33,681 [INFO]   Tendencia: Inter Milan tradicionalmente superior a Fiorentina, mejor plantilla y recursos
+2026-03-19 13:16:33,681 [INFO]   Razon:     Inter históricamente domina este enfrentamiento y tiene mayor calidad de plantilla. La cuota 1.67 ofrece value moderado considerando su superioridad técnica
+2026-03-19 13:16:33,682 [INFO] 
+  APOSTAR -> Atalanta BC
+2026-03-19 13:16:33,682 [INFO]   Partido:   Lecce vs Atalanta BC
+2026-03-19 13:16:33,682 [INFO]   Cuota:     1.82
+2026-03-19 13:16:33,682 [INFO]   Confianza: 75% | % Bankroll: 25% | Monto: $75.00
+2026-03-19 13:16:33,682 [INFO]   Tendencia: Atalanta históricamente superior, juega en Champions League regularmente y tiene mejor plantilla
+2026-03-19 13:16:33,682 [INFO]   Razon:     Atalanta es significativamente superior a Lecce en calidad de plantilla y recursos. Lecce suele luchar por evitar el descenso mientras Atalanta compite por puestos europeos. La diferencia de nivel justifica apostar al favorito
+2026-03-19 13:16:33,682 [INFO]   PASAR -> Sassuolo vs Cagliari | Confianza 45% < umbral 62%. Este es un partido de futbol de Serie A, no basketba
+2026-03-19 13:16:33,682 [INFO]   PASAR -> Hellas Verona vs Fiorentina | Confianza 45% < umbral 62%. Este es un partido de futbol de Serie A, no basketba
+2026-03-19 13:16:33,682 [INFO]   PASAR -> Lazio vs Parma | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,683 [INFO]   PASAR -> Cremonese vs Bologna | Confianza 45% < umbral 62%. Este es un partido de fútbol (Serie A italiana) pero
+2026-03-19 13:16:33,683 [INFO]   PASAR -> Pisa vs Torino | Confianza 45% < umbral 62%. Las cuotas están muy equilibradas (35.1% vs 36.1% vs
+2026-03-19 13:16:33,683 [INFO] 
+  APOSTAR -> Inter Milan
+2026-03-19 13:16:33,683 [INFO]   Partido:   Inter Milan vs AS Roma
+2026-03-19 13:16:33,683 [INFO]   Cuota:     1.72
+2026-03-19 13:16:33,683 [INFO]   Confianza: 73% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,683 [INFO]   Tendencia: Inter Milan históricamente dominante como local en San Siro, especialmente contra Roma
+2026-03-19 13:16:33,683 [INFO]   Razon:     Inter tiene ventaja significativa jugando en casa ante una Roma tradicionalmente débil como visitante en San Siro. La cuota 1.72 ofrece value considerando el dominio histórico del Inter en este enfrentamiento
+2026-03-19 13:16:33,684 [INFO] 
+  APOSTAR -> Atalanta BC
+2026-03-19 13:16:33,684 [INFO]   Partido:   Lecce vs Atalanta BC
+2026-03-19 13:16:33,684 [INFO]   Cuota:     1.7
+2026-03-19 13:16:33,684 [INFO]   Confianza: 75% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,684 [INFO]   Tendencia: Atalanta historicamente superior a Lecce, suele dominar estos enfrentamientos
+2026-03-19 13:16:33,684 [INFO]   Razon:     Atalanta es consistentemente superior a Lecce en calidad de plantilla y historial H2H. La cuota 1.7 ofrece value considerando la diferencia de nivel entre ambos equipos
+2026-03-19 13:16:33,684 [INFO]   PASAR -> Udinese vs Como | Confianza 45% < umbral 62%. partido de Serie A entre equipos que historicamente 
+2026-03-19 13:16:33,684 [INFO] 
+  APOSTAR -> Juventus
+2026-03-19 13:16:33,684 [INFO]   Partido:   Juventus vs Genoa
+2026-03-19 13:16:33,684 [INFO]   Cuota:     1.45
+2026-03-19 13:16:33,684 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,684 [INFO]   Tendencia: Juventus tradicionalmente domina este enfrentamiento como local y tiene superior calidad de plantilla
+2026-03-19 13:16:33,684 [INFO]   Razon:     Diferencia de calidad muy marcada entre equipos, Juventus juega en casa contra un Genoa que históricamente sufre ante grandes equipos, cuota subestima la superioridad de Juventus
+2026-03-19 13:16:33,685 [INFO]   PASAR -> Napoli vs AC Milan | Confianza 45% < umbral 62%. confianza muy baja (45%) debido a falta de informaci
+2026-03-19 13:16:33,685 [INFO]   PASAR -> Inter Milan vs AS Roma | Confianza 45% < umbral 62%. no tengo informacion actualizada sobre forma recient
+2026-03-19 13:16:33,685 [INFO] 
+  APOSTAR -> RB Leipzig
+2026-03-19 13:16:33,685 [INFO]   Partido:   RB Leipzig vs TSG Hoffenheim
+2026-03-19 13:16:33,685 [INFO]   Cuota:     1.98
+2026-03-19 13:16:33,685 [INFO]   Confianza: 72% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,685 [INFO]   Tendencia: Leipzig historicamente fuerte en casa y mejor plantilla que Hoffenheim
+2026-03-19 13:16:33,685 [INFO]   Razon:     Leipzig como local tiene ventaja clara sobre Hoffenheim, equipo de menor nivel. La cuota 1.98 ofrece ligero value considerando la superioridad del local
+2026-03-19 13:16:33,686 [INFO] 
+  APOSTAR -> Bayer Leverkusen
+2026-03-19 13:16:33,686 [INFO]   Partido:   1. FC Heidenheim vs Bayer Leverkusen
+2026-03-19 13:16:33,686 [INFO]   Cuota:     1.61
+2026-03-19 13:16:33,686 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,686 [INFO]   Tendencia: Leverkusen históricamente domina este H2H y tiene superior calidad de plantilla
+2026-03-19 13:16:33,686 [INFO]   Razon:     Leverkusen es un equipo de Champions League visitando a uno de los más débiles de Bundesliga. La diferencia de calidad es abismal y la cuota 1.61 ofrece value considerando que debería ganar 75% de las veces
+2026-03-19 13:16:33,687 [INFO]   PASAR -> 1. FC Köln vs Borussia Monchengladbach | Confianza 45% < umbral 62%. partido de futbol pero pediste analisis de basketbal
+2026-03-19 13:16:33,687 [INFO]   PASAR -> Bayern Munich vs Union Berlin | Confianza 58% < umbral 62%. Aunque Bayern debería ganar, la cuota 1.19 no ofrece
+2026-03-19 13:16:33,687 [INFO]   PASAR -> VfL Wolfsburg vs Werder Bremen | Confianza 45% < umbral 62%. Este es un partido de futbol Bundesliga, no basketba
+2026-03-19 13:16:33,687 [INFO]   PASAR -> Borussia Dortmund vs Hamburger SV | Confianza 50% < umbral 62%. Este es un partido de FUTBOL de la Bundesliga aleman
+2026-03-19 13:16:33,687 [INFO]   PASAR -> FSV Mainz 05 vs Eintracht Frankfurt | Confianza 45% < umbral 62%. Este es un partido de fútbol de la Bundesliga aleman
+2026-03-19 13:16:33,687 [INFO]   PASAR -> FC St. Pauli vs SC Freiburg | Confianza 45% < umbral 62%. Este es un partido de futbol Bundesliga, no basketba
+2026-03-19 13:16:33,687 [INFO]   PASAR -> Augsburg vs VfB Stuttgart | Confianza 45% < umbral 62%. Este es un partido de futbol alemán (Bundesliga), no
+2026-03-19 13:16:33,687 [INFO]   PASAR -> Borussia Monchengladbach vs 1. FC Heidenheim | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,687 [INFO]   PASAR -> Hamburger SV vs Augsburg | Confianza 45% < umbral 62%. No tengo información suficiente sobre la forma recie
+2026-03-19 13:16:33,687 [INFO]   PASAR -> Bayer Leverkusen vs VfL Wolfsburg | Confianza 45% < umbral 62%. Este es un partido de futbol de Bundesliga pero el p
+2026-03-19 13:16:33,687 [INFO] 
+  APOSTAR -> Bayern Munich
+2026-03-19 13:16:33,687 [INFO]   Partido:   SC Freiburg vs Bayern Munich
+2026-03-19 13:16:33,687 [INFO]   Cuota:     1.4
+2026-03-19 13:16:33,687 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,687 [INFO]   Tendencia: Bayern historicamente dominante contra Freiburg, superior calidad individual y plantilla
+2026-03-19 13:16:33,687 [INFO]   Razon:     Bayern Munich tiene ventaja significativa en calidad, historial H2H favorable y motivacion por titulo. Freiburg en casa puede resistir pero Bayern deberia ganar
+2026-03-19 13:16:33,688 [INFO]   PASAR -> TSG Hoffenheim vs FSV Mainz 05 | Confianza 45% < umbral 62%. partido de futbol alemán pero solicitaste análisis d
+2026-03-19 13:16:33,688 [INFO]   PASAR -> Werder Bremen vs RB Leipzig | Confianza 45% < umbral 62%. No tengo información actualizada sobre la forma reci
+2026-03-19 13:16:33,688 [INFO]   PASAR -> VfB Stuttgart vs Borussia Dortmund | Confianza 45% < umbral 62%. Es un partido de futbol de Bundesliga pero no tengo 
+2026-03-19 13:16:33,688 [INFO]   PASAR -> Union Berlin vs FC St. Pauli | Confianza 45% < umbral 62%. Este es un partido de futbol Bundesliga, no basketba
+2026-03-19 13:16:33,688 [INFO]   PASAR -> Eintracht Frankfurt vs 1. FC Köln | Confianza 45% < umbral 62%. Este es un partido de futbol Bundesliga pero me pide
+2026-03-19 13:16:33,688 [INFO]   PASAR -> RC Lens vs Angers | Confianza 58% < umbral 62%. Aunque Lens es claramente superior, la cuota 1.33 of
+2026-03-19 13:16:33,688 [INFO]   PASAR -> Toulouse vs Lorient | Confianza 45% < umbral 62%. Este es un partido de futbol francés, no basketball.
+2026-03-19 13:16:33,688 [INFO]   PASAR -> Auxerre vs Brest | Confianza 45% < umbral 62%. Este es un partido de futbol frances (Ligue 1) pero 
+2026-03-19 13:16:33,688 [INFO] 
+  APOSTAR -> Paris Saint Germain
+2026-03-19 13:16:33,688 [INFO]   Partido:   Nice vs Paris Saint Germain
+2026-03-19 13:16:33,688 [INFO]   Cuota:     1.41
+2026-03-19 13:16:33,688 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,688 [INFO]   Tendencia: PSG dominante en Ligue 1, muy superior en calidad de plantilla y recursos
+2026-03-19 13:16:33,688 [INFO]   Razon:     PSG tiene una ventaja abismal de calidad sobre Nice. Históricamente domina estos enfrentamientos y la diferencia de nivel es enorme. Cuota 1.41 ofrece valor considerando la superioridad del PSG
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Lyon vs AS Monaco | Confianza 45% < umbral 62%. Las cuotas están muy ajustadas y reflejan un partido
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Paris FC vs Le Havre | Confianza 45% < umbral 62%. No tengo información suficiente sobre la forma recie
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Marseille vs Lille | Confianza 45% < umbral 62%. No tengo suficiente información actualizada sobre la
+2026-03-19 13:16:33,689 [INFO] 
+  APOSTAR -> Rennes
+2026-03-19 13:16:33,689 [INFO]   Partido:   Rennes vs Metz
+2026-03-19 13:16:33,689 [INFO]   Cuota:     1.39
+2026-03-19 13:16:33,689 [INFO]   Confianza: 78% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,689 [INFO]   Tendencia: Rennes dominante en casa contra equipos relegados, Metz en crisis defensiva
+2026-03-19 13:16:33,689 [INFO]   Razon:     Rennes local contra Metz que históricamente lucha contra la relegación. La diferencia de calidad es enorme y Rennes necesita puntos para posiciones europeas. Cuota 1.39 ofrece value considerando la superioridad clara
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Nantes vs Strasbourg | Confianza 45% < umbral 62%. no tengo información actualizada suficiente sobre la
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Paris Saint Germain vs Toulouse | Confianza 58% < umbral 62%. Aunque PSG deberia ganar facilmente en casa vs Toulo
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Strasbourg vs Nice | Confianza 45% < umbral 62%. No tengo suficiente información actualizada sobre la
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Brest vs Rennes | Confianza 45% < umbral 62%. Este es un partido de futbol de Ligue 1, no basketba
+2026-03-19 13:16:33,689 [INFO]   PASAR -> Lille vs RC Lens | Confianza 45% < umbral 62%. Es un derbi del norte de Francia muy equilibrado ent
+2026-03-19 13:16:33,689 [INFO] 
+  APOSTAR -> Lyon
+2026-03-19 13:16:33,689 [INFO]   Partido:   Angers vs Lyon
+2026-03-19 13:16:33,689 [INFO]   Cuota:     1.86
+2026-03-19 13:16:33,689 [INFO]   Confianza: 72% | % Bankroll: 20% | Monto: $60.00
+2026-03-19 13:16:33,689 [INFO]   Tendencia: Lyon históricamente superior a Angers, mejor plantilla y recursos
+2026-03-19 13:16:33,689 [INFO]   Razon:     Lyon tiene calidad muy superior a Angers. Aunque Angers juega en casa, la diferencia de nivel es considerable. Lyon necesita puntos y tiene los medios para ganar este partido
+2026-03-19 13:16:33,690 [INFO]   PASAR -> Le Havre vs Auxerre | Confianza 45% < umbral 62%. No tengo informacion suficiente sobre la forma recie
+2026-03-19 13:16:33,690 [INFO]   PASAR -> Lorient vs Paris FC | Confianza 45% < umbral 62%. Este es un partido de Ligue 1 francesa, no basketbal
+2026-03-19 13:16:33,690 [INFO]   PASAR -> Metz vs Nantes | Confianza 45% < umbral 62%. No tengo datos actuales sobre la forma reciente, pos
+2026-03-19 13:16:33,690 [INFO]   PASAR -> AS Monaco vs Marseille | Confianza 45% < umbral 62%. Este es un partido de fútbol francés, no basketball.
+2026-03-19 13:16:33,690 [INFO]   PASAR -> Sporting Lisbon vs Arsenal | Confianza 58% < umbral 62%. Confianza por debajo del umbral mínimo (62%). Sin da
+2026-03-19 13:16:33,690 [INFO]   PASAR -> Real Madrid vs Bayern Munich | Confianza 45% < umbral 62%. Este es un partido de futbol (Champions League) pero
+2026-03-19 13:16:33,690 [INFO]   PASAR -> Barcelona vs Atlético Madrid | Confianza 45% < umbral 62%. Este es un partido de futbol UEFA Champions League, 
+2026-03-19 13:16:33,690 [INFO]   PASAR -> Paris Saint Germain vs Liverpool | Confianza 45% < umbral 62%. Este es un partido de futbol UEFA Champions League, 
+2026-03-19 13:16:33,690 [INFO] 
+Resumen: 26 apuestas registradas hoy.
+2026-03-19 13:16:33,690 [INFO] Stats globales -> Win rate: 0.0% | ROI: 0.0% | Total: 0
+2026-03-19 13:16:33,691 [INFO] 
+Scheduler activo: 9:00 y 18:00 diariamente. Ctrl+C para detener.
+
+2026-03-19 17:19:25,197 [INFO] Inicializando agente...
+2026-03-19 17:19:25,199 [INFO] Bankroll actual: $300.00
+2026-03-19 17:19:25,199 [INFO] Testeando conexion Telegram...
+2026-03-19 17:19:25,796 [WARNING] Telegram no conectado. Revisa token y chat_id en telegram_bot.py
+2026-03-19 17:19:25,797 [INFO] Agente listo.
+2026-03-19 17:19:25,797 [INFO] Ejecutando primer ciclo...
+2026-03-19 17:19:25,797 [INFO] ============================================================
+2026-03-19 17:19:25,797 [INFO]   INICIO DE CICLO DE ANALISIS
+2026-03-19 17:19:25,797 [INFO] ============================================================
+2026-03-19 17:19:25,798 [INFO] Agente operativo. Margen: 3 semana(s) antes de eliminacion.
+2026-03-19 17:19:25,798 [INFO] Obteniendo partidos del dia...
+2026-03-19 17:19:30,928 [INFO] 143 partidos encontrados.
+2026-03-19 17:19:30,929 [INFO] Analizando (minimo 3 apuestas por dia)...
+2026-03-19 17:19:35,715 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
