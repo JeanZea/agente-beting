@@ -1,49 +1,50 @@
 # ============================================================
 #  SPORTS BETTING AGENT - CONFIG
+#  En local: edita los valores directamente
+#  En Railway: configura como variables de entorno
 # ============================================================
 
+import os
+
 # --- APIs ---
-ANTHROPIC_API_KEY = "XXXXXX"       # console.anthropic.com
-ODDS_API_KEY      = "XXXXXX"               # the-odds-api.com
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "sk-ant-XXXXXXX")
+ODDS_API_KEY      = os.environ.get("ODDS_API_KEY",      "XXXXXXX")
+
+# --- Telegram ---
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN",    "XXXXXXX")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID",  "XXXXXXX")
 
 # --- Bankroll ---
-BANKROLL_INICIAL  = 300.0    # en USD (~1000 soles)
+BANKROLL_INICIAL  = float(os.environ.get("BANKROLL_INICIAL", "300.0"))
 
 # --- Deportes a monitorear ---
 SPORTS = [
-    # Basketball
     "basketball_nba",
     "basketball_ncaab",
     "basketball_euroleague",
     "basketball_nbl",
     "basketball_wncaab",
-    # Futbol
-    "soccer_epl",               # Premier League
-    "soccer_spain_la_liga",     # La Liga
-    "soccer_italy_serie_a",     # Serie A
-    "soccer_germany_bundesliga",# Bundesliga
-    "soccer_france_ligue_one",  # Ligue 1
-    "soccer_uefa_champs_league",# Champions League
-    "soccer_conmebol_copa_libertadores", # Copa Libertadores
+    "soccer_epl",
+    "soccer_spain_la_liga",
+    "soccer_italy_serie_a",
+    "soccer_germany_bundesliga",
+    "soccer_france_ligue_one",
+    "soccer_uefa_champs_league",
+    "soccer_conmebol_copa_libertadores",
 ]
 
-# --- Regiones de odds ---
-REGIONS = "eu"   # eu | us | uk | au
+REGIONS = "eu"
 
 # --- Apuestas dinamicas ---
-# La IA decide el % segun su confianza:
-#   confianza >= 0.80 -> hasta 50% del bankroll
-#   confianza >= 0.70 -> hasta 25% del bankroll
-#   confianza >= 0.62 -> hasta 10% del bankroll
-APUESTA_MINIMA_USD = 10.0    # minimo en USD por apuesta
-APUESTA_MAXIMA_PCT = 0.50    # techo absoluto: 50% del bankroll
-MIN_CONFIANZA      = 0.62    # umbral base
-MIN_APUESTAS_DIA   = 3       # si no llega a 3, baja umbral a 0.55
+APUESTA_MINIMA_USD = 10.0
+APUESTA_MAXIMA_PCT = 0.50
+MIN_CONFIANZA      = 0.62
+MIN_APUESTAS_DIA   = 3
 
 # --- Logica de supervivencia ---
 SEMANAS_NEGATIVAS_LIMITE = 3
 ROI_MINIMO_SEMANAL       = -0.05
 
 # --- Rutas ---
-DB_PATH  = "agent.db"
-LOG_PATH = "agent.log"
+DB_PATH  = os.environ.get("DB_PATH",  "agent.db")
+LOG_PATH = os.environ.get("LOG_PATH", "agent.log")

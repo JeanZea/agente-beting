@@ -1,7 +1,7 @@
 """
 Dashboard API — Flask server
-Correr: python dashboard.py  (puerto 5000)
-Abrir:  http://127.0.0.1:5000
+Local:      python dashboard.py  → http://127.0.0.1:5000
+Produccion: gunicorn dashboard:app
 """
 
 import os
@@ -87,7 +87,6 @@ def guardar_resultado():
     ganancia   = float(data["ganancia"])
 
     actualizar_resultado(apuesta_id, resultado, ganancia)
-
     balance_nuevo = round(get_balance_actual() + ganancia, 2)
     registrar_bankroll(balance_nuevo, f"Resultado apuesta #{apuesta_id}: {resultado}")
 
@@ -95,4 +94,5 @@ def guardar_resultado():
 
 
 if __name__ == "__main__":
-    app.run(debug=False, port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=False, host="0.0.0.0", port=port)
