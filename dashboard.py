@@ -5,6 +5,7 @@ Produccion: gunicorn dashboard:app
 """
 
 import os
+os.makedirs("/data", exist_ok=True)
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 from database import (
