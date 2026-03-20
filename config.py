@@ -1,23 +1,17 @@
-# ============================================================
-#  SPORTS BETTING AGENT - CONFIG
-#  En local: edita los valores directamente
-#  En Railway: configura como variables de entorno
-# ============================================================
-
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # --- APIs ---
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "sk-ant-XXXXXXX")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "XXXXXXX")
 ODDS_API_KEY      = os.environ.get("ODDS_API_KEY",      "XXXXXXX")
-
-# --- Telegram ---
-TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN",    "XXXXXXX")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID",  "XXXXXXX")
+TELEGRAM_TOKEN    = os.environ.get("TELEGRAM_TOKEN",    "XXXXXXX")
+TELEGRAM_CHAT_ID  = os.environ.get("TELEGRAM_CHAT_ID",  "XXXXXXX")
 
 # --- Bankroll ---
 BANKROLL_INICIAL  = float(os.environ.get("BANKROLL_INICIAL", "300.0"))
 
-# --- Deportes a monitorear ---
+# --- Deportes (solo futbol y basketball) ---
 SPORTS = [
     "basketball_nba",
     "basketball_ncaab",
@@ -33,17 +27,24 @@ SPORTS = [
     "soccer_conmebol_copa_libertadores",
 ]
 
+# --- Mercados habilitados (sin límite) ---
+MARKETS = "h2h,spreads,totals"   # h2h + handicap + over/under
+
 REGIONS = "eu"
 
-# --- Apuestas dinamicas ---
-APUESTA_MINIMA_USD = 10.0
-APUESTA_MAXIMA_PCT = 0.50
-MIN_CONFIANZA      = 0.62
-MIN_APUESTAS_DIA   = 3
+# --- Apuestas dinámicas ---
+APUESTA_MINIMA_USD  = 5.0
+APUESTA_MAXIMA_PCT  = 0.60    # hasta 60% del bankroll si confianza muy alta
+MIN_CONFIANZA       = 0.62
+MIN_APUESTAS_DIA    = 3
 
-# --- Logica de supervivencia ---
-SEMANAS_NEGATIVAS_LIMITE = 3
-ROI_MINIMO_SEMANAL       = -0.05
+# --- Evaluación DIARIA de ROI (nuevo) ---
+DIAS_NEGATIVOS_LIMITE = 5      # 5 días negativos consecutivos → eliminación
+ROI_MINIMO_DIARIO     = -0.05  # -5% ROI diario = día negativo
+
+# --- Aprendizaje intra-día ---
+MAX_APUESTAS_DIA      = 15     # máximo de apuestas por día
+OBJETIVO_ROI_DIARIO   = 0.10   # el agente busca terminar el día con +10% ROI
 
 # --- Rutas ---
 DB_PATH  = os.environ.get("DB_PATH",  "agent.db")
