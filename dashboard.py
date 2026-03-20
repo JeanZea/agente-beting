@@ -1,24 +1,29 @@
-"""
-Dashboard API — Flask server
-Local:      python dashboard.py  → http://127.0.0.1:5000
-Produccion: gunicorn dashboard:app
-"""
-
 import os
-os.makedirs("/data", exist_ok=True)
 from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 from database import (
     get_conn, get_stats_globales, get_balance_actual,
     actualizar_resultado, registrar_bankroll,
-    contar_semanas_negativas_consecutivas
+    contar_dias_negativos_consecutivos, init_db
 )
-from config import BANKROLL_INICIAL, SEMANAS_NEGATIVAS_LIMITE
+from config import BANKROLL_INICIAL, DIAS_NEGATIVOS_LIMITE
 
-app  = Flask(__name__)
+app = Flask(__name__)
 CORS(app)
-
 DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Init DB al arrancar el dashboard
+init_db()
+
+
+def query(sql, params=()):
+    """Ejecuta una query y retorna todas las filas."""
+    conn = get_conn()
+    c    = conn.cursor()
+    c.execute(sql, params)
+    rows = c.fetchall()
+    conn.close()
+    return rows
 
 
 @app.route("/")
@@ -30,27 +35,25 @@ def index():
 def stats():
     globales    = get_stats_globales()
     balance     = get_balance_actual()
-    semanas_neg = contar_semanas_negativas_consecutivas()
+    semanas_neg = contar_dias_negativos_consecutivos()
     return jsonify({
         **globales,
         "balance":           balance,
         "bankroll_inicial":  BANKROLL_INICIAL,
         "pnl":               round(balance - BANKROLL_INICIAL, 2),
-        "semanas_negativas": semanas_neg,
-        "semanas_limite":    SEMANAS_NEGATIVAS_LIMITE,
-        "vidas_restantes":   SEMANAS_NEGATIVAS_LIMITE - semanas_neg,
+        "dias_negativos": semanas_neg,
+        "dias_limite":    SEMANAS_NEGATIVAS_LIMITE,
+        "vidas_restantes": DIAS_NEGATIVOS_LIMITE - semanas_neg,
     })
 
 
 @app.route("/api/apuestas")
 def apuestas():
-    conn = get_conn()
-    rows = conn.execute("""
+    rows = query("""
         SELECT id, timestamp, sport, partido, seleccion, cuota,
                monto, confianza, resultado, ganancia, semana, razon
         FROM apuestas ORDER BY id DESC LIMIT 100
-    """).fetchall()
-    conn.close()
+    """)
     cols = ["id","timestamp","sport","partido","seleccion","cuota",
             "monto","confianza","resultado","ganancia","semana","razon"]
     return jsonify([dict(zip(cols, r)) for r in rows])
@@ -58,13 +61,11 @@ def apuestas():
 
 @app.route("/api/semanas")
 def semanas():
-    conn = get_conn()
-    rows = conn.execute("""
+    rows = query("""
         SELECT semana, apuestas_total, apuestas_ganadas,
                invertido, retorno, roi, es_negativa
         FROM semanas ORDER BY semana DESC LIMIT 20
-    """).fetchall()
-    conn.close()
+    """)
     cols = ["semana","apuestas_total","apuestas_ganadas",
             "invertido","retorno","roi","es_negativa"]
     return jsonify([dict(zip(cols, r)) for r in rows])
@@ -72,11 +73,7 @@ def semanas():
 
 @app.route("/api/bankroll")
 def bankroll():
-    conn = get_conn()
-    rows = conn.execute(
-        "SELECT timestamp, balance, nota FROM bankroll ORDER BY id ASC"
-    ).fetchall()
-    conn.close()
+    rows = query("SELECT timestamp, balance, nota FROM bankroll ORDER BY id ASC")
     return jsonify([{"timestamp": r[0], "balance": r[1], "nota": r[2]} for r in rows])
 
 
